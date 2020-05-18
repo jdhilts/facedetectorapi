@@ -26,8 +26,8 @@ app.put('/image', (req, res) => {image.handleImage(req, res, database)});
 app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)});
 app.post('/register', (req, res) => {register.handleRegister(req, res, database, bcrypt)});
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`THE APP IS RUNNING ON SERVER ${PORT}`));
+
+app.listen(process.env.PORT || 300 () => {console.log(`THE APP IS RUNNING ON SERVER ${process.env.PORT}`)});
 
 
 
